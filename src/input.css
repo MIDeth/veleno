@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Vogue;
+  src: url("/public/font/Vogue.ttf");
+}
+
+@font-face {
+  font-family: NewYork;
+  src: url("/public/font/NewYork.otf");
+}
+
+@font-face {
+  font-family: Fabulous;
+  src: url("/public/font/NT\ Fabulous.otf");
+}
+
+body,
+section {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+@media only screen and (max-width: 790px) {
+  .third_img {
+    order: 9999;
+    width: 100%;
+  }
+  .first_img {
+    width: 100%;
+    margin: 2rem 0 5.5rem 0;
+  }
+}
